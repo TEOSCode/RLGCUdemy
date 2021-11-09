@@ -12,6 +12,7 @@ function App() {
   const [gastos, guardarGastos] = useState([]);
   const [gasto, guardarGasto] = useState([]);
   const [crearGasto, guardarCrearGasto] = useState(false);
+
   //useEffect que actualiza el restante
   useEffect(() => {
     if (crearGasto) {

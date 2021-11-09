@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Gasto from './Gasto';
 
 const Listado = ({gastos, presupesto, restante}) => {
@@ -20,6 +21,12 @@ const Listado = ({gastos, presupesto, restante}) => {
       </li>
     </div>
   );
+};
+
+Listado.propTypes = {
+  gastos: PropTypes.array.isRequired,
+  presupesto: PropTypes.number.isRequired,
+  restante: PropTypes.number.isRequired,
 };
 
 export default Listado;

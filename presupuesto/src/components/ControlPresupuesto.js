@@ -1,5 +1,7 @@
 import React, {Fragment} from 'react';
+import PropTypes from 'prop-types';
 import {revisarPresupuesto} from '../helpers';
+
 const Control = ({presupesto, restante}) => {
   return (
     <Fragment>
@@ -17,4 +19,10 @@ const Control = ({presupesto, restante}) => {
     </Fragment>
   );
 };
+
+Control.propTypes = {
+  presupesto: PropTypes.number.isRequired,
+  restante: PropTypes.number.isRequired,
+};
+
 export default Control;
