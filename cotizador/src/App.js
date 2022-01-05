@@ -4,7 +4,7 @@ import Formulario from './components/Formulario';
 
 const Contenedor = styled.div`
   max-width: 600px;
-  margin: 0 auto;
+  margin: 12px auto;
 `;
 const ContenedorForm = styled.div`
   background-color: #fff;
